@@ -1,2 +1,2 @@
-# aadhya-ui
-aadhya ui
+# aadhyas-ui
+aadhyas ui
