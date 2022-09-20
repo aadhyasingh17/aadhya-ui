@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.q h4{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header
+{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(129, 125, 125, 0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color:white;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+
+
+      nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size:22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+/*gallery*/
+.gallery-container{
+    max-width: 1200px;
+    margin: 55px;
+    padding:10px 10px 10px;
+    background:#f2f2f2;
+    overflow: auto;
+}
+.column{
+    margin: 5px;
+    border:1px solid;
+    float:left;
+    width:390px;
+}
+.column img{
+    width:100%;
+
+      
+        height: 200px;
+        object-fit: cover;
+    }
